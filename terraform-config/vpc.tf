@@ -1,8 +1,8 @@
-resource "aws_vpc" "tp_3_final_2271627_vpc" {
+resource "aws_vpc" "projet_immo_vpc" {
   cidr_block = var.vpc_cidr
 
   tags = {
-    Name = "TP-3-FINAL-2271627-VPC"
+    Name = "PROJET-IMMO-VPC"
   }
 }
 

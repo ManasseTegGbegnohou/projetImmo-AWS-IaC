@@ -1,7 +1,7 @@
-resource "aws_internet_gateway" "tp_3_final_2271627_internet_gw" {
-  vpc_id = aws_vpc.tp_3_final_2271627_vpc.id
+resource "aws_internet_gateway" "projet_immo_internet_gw" {
+  vpc_id = aws_vpc.projet_immo_vpc.id
 
   tags = {
-    Name = "TP-3-FINAL-2271627-INTERNET-GW"
+    Name = "PROJET-IMMO-INTERNET-GW"
   }
 }

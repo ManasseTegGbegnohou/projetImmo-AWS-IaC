@@ -16,22 +16,22 @@ variable "azs" {
   default     = "us-east-1a"
 }
 
-resource "aws_subnet" "tp_3_final_2271627_public_subnet" {
-  vpc_id            = aws_vpc.tp_3_final_2271627_vpc.id
+resource "aws_subnet" "projet_immo_public_subnet" {
+  vpc_id            = aws_vpc.projet_immo_vpc.id
   cidr_block        = var.public_subnet_cidrs
   availability_zone = var.azs
 
   tags = {
-    Name = "TP-3-FINAL-2271627-PUBLIC-1"
+    Name = "PROJET-IMMO-PUBLIC-1"
   }
 }
 
-resource "aws_subnet" "tp_3_final_2271627_private_subnets" {
-  vpc_id            = aws_vpc.tp_3_final_2271627_vpc.id
+resource "aws_subnet" "projet_immo_private_subnets" {
+  vpc_id            = aws_vpc.projet_immo_vpc.id
   cidr_block        = var.private_subnet_cidrs
   availability_zone = var.azs
 
   tags = {
-    Name = "TP-3-FINAL-2271627-PRIVATE-1"
+    Name = "PROJET-IMMO-PRIVATE-1"
   }
 }
