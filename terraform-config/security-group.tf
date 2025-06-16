@@ -1,5 +1,5 @@
 resource "aws_security_group" "projet_immo_sg" {
-  name        = "Traefik Protocol Access"
+  name        = "TRAEFIK-PROTOCOL-ACCESS"
   description = "Allow HTTP, HTTPS traffic"
   vpc_id      = aws_vpc.projet_immo_vpc.id
 
