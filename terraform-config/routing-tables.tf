@@ -11,7 +11,7 @@ resource "aws_route_table" "projet_immo_public_rt" {
   }
 
   tags = {
-    Name = "PROJET-IMMO-PUBLIC"
+    Name = "PROJET-IMMO-PUBLIC-RT"
   }
 }
 
@@ -24,7 +24,7 @@ resource "aws_route_table" "projet_immo_private_rt" {
   }
 
   tags = {
-    Name = "PROJET-IMMO-PRIVATE"
+    Name = "PROJET-IMMO-PRIVATE-RT"
   }
 }
 
