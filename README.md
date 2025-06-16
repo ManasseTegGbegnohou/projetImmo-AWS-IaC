@@ -27,8 +27,8 @@ terraform init
 terraform apply
 ```
 - Wait 2 minutes for the EC2's user.data to setup
-- You should now be able to acces the [website](projetImmo.manac.duckdns.org)
-
+- You should now be able to acces the [website](https://projetImmo.manac.duckdns.org)
+- 
 ---
 
 > ⚠️ This repository is a work in progress. AWS deployment is currently in the testing phase.
