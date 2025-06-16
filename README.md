@@ -1,9 +1,9 @@
 # projetImmo-AWS-IaC
 
-## This repo contains the `Terraform` AWS Infrastructure to deploy a FullStack React web app
+## This repo contains the `Terraform` AWS Infrastructure and instructions to deploy a full-stack web app on AWS EC2
 
-- [Wiki](https://github.com/ManasseTegGbegnohou/420-414-Epreuve-Finale-IaC/wiki)
-- [Web App Repository](https://github.com/ManasseTegGbegnohou/projetImmo-AWS-services.git)
+- Visit the [wiki](https://github.com/ManasseTegGbegnohou/420-414-Epreuve-Finale-IaC/wiki) for more information about the infrastructure.
+- This repository [Web App Repository](https://github.com/ManasseTegGbegnohou/projetImmo-AWS-services.git) contains the network and containers configuration of the app.
 
 ---
 
@@ -25,9 +25,9 @@ cd projetImmo-AWS-IaC/terraform-config/
 terraform init
 terraform apply
 ```
-- Wait 2 minutes for the EC2's user-data.sh to setup
+- Wait 3 to 5 minutes for the EC2's user-data.sh script to complete its setup.
 - You should now be able to access the [web app](https://projetImmo.manac.duckdns.org)
-- 
+
 ---
 
 > ⚠️ This repository is a work in progress. AWS deployment is currently in the testing phase.
