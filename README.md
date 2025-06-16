@@ -20,5 +20,5 @@
 cd projetImmo-AWS-IaC/terraform-config/
 terraform init
 terraform apply
-
+```
 > ⚠️ This repository is a work in progress. AWS deployment is currently in the testing phase.
