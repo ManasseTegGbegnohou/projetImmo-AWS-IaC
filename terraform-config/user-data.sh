@@ -37,7 +37,7 @@ sleep 3
 # Clone services repo
 echo "Cloning Repo..."
 git clone https://github.com/ManasseTegGbegnohou/projetImmo-AWS-services.git
-cd 420-414-Epreuve-Finale-Services/
+cd projetImmo-AWS-services/
 
 # Start all Docker Images
 echo "Starting Dockers..."
