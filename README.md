@@ -19,6 +19,11 @@
 - Copy and paste your AWS CLI credentials in this file:
   - On **Windows**: `C:/Users/yourUser/.aws/credentials`
   - On **Linux**: `~/.aws/credentials`
+- Change the DuckDNS domain and token in `projetImmo-AWS-IaC/terraform-config/user-data.sh`:
+```
+# Domain Ip Update
+echo url="https://www.duckdns.org/update?domains=yourDomain&token=yourToken=$MY_PUBLIC_IP" | curl -k -K -
+```
 - Follow these steps to deploy the app:
 ```bash
 cd projetImmo-AWS-IaC/terraform-config/
