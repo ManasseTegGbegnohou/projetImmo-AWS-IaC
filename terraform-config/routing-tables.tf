@@ -28,13 +28,11 @@ resource "aws_route_table" "projet_immo_private_rt" {
   }
 }
 
-# Association sous-réseaux public/tables de routage
 resource "aws_route_table_association" "tp_3_final_2271627_public_subnet_association" {
   subnet_id      = aws_subnet.projet_immo_public_subnet.id
   route_table_id = aws_route_table.projet_immo_public_rt.id
 }
 
-# Association sous-réseaux private/tables de routage
 resource "aws_route_table_association" "tp_3_final_2271627_private_subnet_association" {
   subnet_id      = aws_subnet.projet_immo_private_subnets.id
   route_table_id = aws_route_table.projet_immo_private_rt.id

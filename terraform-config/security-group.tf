@@ -3,15 +3,6 @@ resource "aws_security_group" "projet_immo_sg" {
   description = "Allow HTTP, HTTPS traffic"
   vpc_id      = aws_vpc.projet_immo_vpc.id
 
-  # Can Be Removed or Added, Depending on SSH DEBUG NEED
-  # ingress {
-  #   description = "SSH"
-  #   from_port   = 22
-  #   to_port     = 22
-  #   protocol    = "tcp"
-  #   cidr_blocks = ["0.0.0.0/0"]
-  # }
-
   ingress {
     description = "HTTP"
     from_port   = 80

@@ -1,13 +1,13 @@
 variable "ami_id" {
   type        = string
   description = "Amazon Machine Image Id of EC2 Instance"
-  default     = "ami-084568db4383264d4"
+  default     = "ami-020cba7c55df1f615"
 }
 
 variable "instance_type" {
   type        = string
   description = "EC2 instance Type"
-  default     = "t2.large"
+  default     = "m7i-flex.large"
 }
 
 resource "aws_instance" "projet_immo_ec2" {
