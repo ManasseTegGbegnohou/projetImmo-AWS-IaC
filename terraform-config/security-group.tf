@@ -1,7 +1,15 @@
 resource "aws_security_group" "projet_immo_sg" {
   name        = "TRAEFIK-PROTOCOL-ACCESS"
-  description = "Allow HTTP, HTTPS traffic"
+  description = "Allow HTTP, HTTPS, API, and SSH traffic"
   vpc_id      = aws_vpc.projet_immo_vpc.id
+
+  ingress {
+    description = "SSH"
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
 
   ingress {
     description = "HTTP"
