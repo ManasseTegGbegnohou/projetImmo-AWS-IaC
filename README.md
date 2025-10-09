@@ -1,4 +1,4 @@
-# projetImmo-AWS-IaC
+# REAL-ESTATE-AWS-IaC
 
 ## This repo contains the `Terraform` AWS Infrastructure and instructions to deploy a full-stack web app on AWS EC2
 
